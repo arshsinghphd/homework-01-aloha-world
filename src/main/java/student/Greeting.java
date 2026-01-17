@@ -153,7 +153,6 @@ public class Greeting {
                 this.getLocalityID(), this.getLocalityName(),
                 this.getAsciiGreeting(), this.getUnicodeGreeting());
     }
-
     // main method for example usage, to be deleted before submission
 //    public static void main(String[] args) {
 //        Greeting g1 = new Greeting(1, "USA", "HELLO",
