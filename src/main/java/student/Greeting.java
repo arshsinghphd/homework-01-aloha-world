@@ -2,17 +2,16 @@ package student;
 
 /*
  * This class is a placeholder which you will fully implement based on the javadoc
- * 
  * https://cs5004-khoury-lionelle.github.io/hello_world/student/package-summary.html
- * 
  */
-
 /**
- * Greeting holds the locality of the greeting, the greeting itself, and the format in which the greeting is to be printed.
+ * Greeting holds the locality of the greeting, the greeting itself, and the format in which 
+ * the greeting is to be printed.
  *
  * <p>
  * The greeting class is simple acts as a container for the information of location, 
- * the ascii and unicode strings of the greeting, along with formatted in which the greeting should be printed.
+ * the ascii and unicode strings of the greeting, along with formatted in which the greeting 
+ * should be printed.
  * </p>
  *
  */
@@ -105,7 +104,6 @@ public class Greeting {
 
     /**
      * Returns the Unicode greeting. Just the greeting, no formatting.
-     *
      * @return string, greeting in Unicode encoding.
      */
     public String getUnicodeGreeting() {
@@ -116,7 +114,6 @@ public class Greeting {
      * Returns the format string with the greeting inserted into the format.
      * This string will have a %s, so that the name can be inserted into the
      * greeting in the correct location.
-     *
      * @return the format string with the greeting inserted into the format.
      * @see #getFormatStr(boolean asciiOnly)
      */
@@ -128,9 +125,7 @@ public class Greeting {
      * Returns the format string with the greeting inserted into the format.
      * This string will have a %s, so that the name can be inserted into the
      * greeting in the correct location.
-     *
-     * @param asciiOnly -  if true, only ASCII characters will be used
-     *
+     * @param asciiOnly -  if true, only ASCII characters will be used.
      * @return format string with the greeting inserted into the format.
      */
     public String getFormatStr(boolean asciiOnly) {
@@ -146,12 +141,12 @@ public class Greeting {
      */
     @Override
     public String toString() {
-        return String.format("{localityID:%d, " +
-                        "localityName:\"%s\", " +
-                        "asciiGreeting:\"%s\", " +
-                        "unicodeGreeting:\"%s\"}",
-                this.getLocalityID(), this.getLocalityName(),
-                this.getAsciiGreeting(), this.getUnicodeGreeting());
+        return String.format("{localityID:%d, " 
+            + "localityName:\"%s\", " 
+            + "asciiGreeting:\"%s\", " 
+            + "unicodeGreeting:\"%s\"}",
+            this.getLocalityID(), this.getLocalityName(),
+            this.getAsciiGreeting(), this.getUnicodeGreeting());
     }
     // main method for example usage, to be deleted before submission
 //    public static void main(String[] args) {
