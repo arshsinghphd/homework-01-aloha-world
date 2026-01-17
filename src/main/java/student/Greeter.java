@@ -23,7 +23,7 @@ public class Greeter {
     private int locality;
 
     /** List of locality options. */
-    private static final List<String> localityList = List.of("Hawaii", "USA", "China", "Italy");
+    private static final List<String> LOCALITYLIST = List.of("Hawaii", "USA", "China", "Italy");
 
     /** int value of Hawaii greeting. */
     private static final int HAWAII = 1;
@@ -55,9 +55,9 @@ public class Greeter {
      */
     public Greeter(String name, int locality) {
         this.name = name;
-        if (locality < 1 || locality > localityList.size()) {
+        if (locality < 1 || locality > LOCALITYLIST.size()) {
             throw new IllegalArgumentException(
-                    String.format("Locality must be between 1 and %d", localityList.size()));
+                    String.format("Locality must be between 1 and %d", LOCALITYLIST.size()));
         }
         this.locality = locality;
     }
@@ -97,9 +97,9 @@ public class Greeter {
      *        IllegalArgumentException
      */
     public void setLocality(int locality) {
-        if (locality < 1 || locality > localityList.size()) {
+        if (locality < 1 || locality > LOCALITYLIST.size()) {
             throw new IllegalArgumentException(
-                    String.format("Locality must be between 1 and %d", localityList.size()));
+                    String.format("Locality must be between 1 and %d", LOCALITYLIST.size()));
         }
         this.locality = locality;
     }
@@ -175,16 +175,16 @@ public class Greeter {
     }
 
     /**
-     * Returns the locality as a string. If the locality is not between 1 and localityList.size() it
+     * Returns the locality as a string. If the locality is not between 1 and LOCALITYLIST.size() it
      * will return "USA"
      * @return the locality as a string
      */
     private String getLocalityString() {
-        if (locality < 1 || locality >= localityList.size()) {
+        if (locality < 1 || locality >= LOCALITYLIST.size()) {
             return "USA";
         }
         // fixing error replacing .get(locality) with .get(locality - 1)
-        return localityList.get(locality - 1);
+        return LOCALITYLIST.get(locality - 1);
     }
 
     /**
@@ -252,7 +252,7 @@ public class Greeter {
      * Returns a copy of the locality list.
      * @return a copy of the locality list
      */
-    public static List<String> getLocalityList() {
-        return List.copyOf(localityList); // return a copy so original isn't modified
+    public static List<String> getLOCALITYLIST() {
+        return List.copyOf(LOCALITYLIST); // return a copy so original isn't modified
     }
 }
