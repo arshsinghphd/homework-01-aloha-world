@@ -252,7 +252,7 @@ public class Greeter {
      * Returns a copy of the locality list.
      * @return a copy of the locality list
      */
-    public static List<String> getLOCALITYLIST() {
+    public static List<String> getLocalityList() {
         return List.copyOf(LOCALITYLIST); // return a copy so original isn't modified
     }
 }
