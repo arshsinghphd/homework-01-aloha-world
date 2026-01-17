@@ -1,5 +1,4 @@
 package student; // the "package", in java folder structure maters and creates packages.
-
 // for this class, everything will often be under student, as the autograder
 // uses packages to keep student code separate from provided code. It is also
 // good design practice to isolate your files into packages.
@@ -94,7 +93,6 @@ public class Greeter {
      * is a good practice to make fields private and use mutators to set the value.
      *
      * Anything that doesn't have a mutator is a 'readonly' field.
-     *
      * @param locality the int value of the locality, if out of range, throws an
      *        IllegalArgumentException
      */
@@ -128,9 +126,7 @@ public class Greeter {
      * <p>
      * Examples:
      * </p>
-     *
      * <pre>
-     *
      * {@code
      * Greeter greeter = new Greeter("Kailani", 1);
      *
@@ -143,13 +139,12 @@ public class Greeter {
      *
      * greeter.setLocality(2);
      * System.out.println(greeter.greet(true)); // Hello, Kailani!
-     *
+     * 
      * }
      * </pre>
      *
      * Note for any locality not 1, 3, 4 it will default to "Hello, {@code<name>}!" which is the
      * default greeting.
-     *
      * @param asciiOnly if true, only ascii characters will be used
      * @return the greeting. Possible options are "Hello", "Aloha", "Ni Hao", "Ciao" based on the
      *         locality, so if the locality is 1, and the name is "Kailani", it will return "Aloha,
@@ -214,7 +209,6 @@ public class Greeter {
      * In this case, we can compare two greeter objects and if the name and the locality are the
      * same, they are treated as the same object. Without this, it would actually compare the memory
      * addresses of the objects to confirm they are the same.
-     *
      * @param obj the object to compare to
      * @return true if the objects are the same, false otherwise
      */
