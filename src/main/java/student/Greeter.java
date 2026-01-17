@@ -19,6 +19,7 @@ public class Greeter {
     /** holds the name of the person. Immutable. */
     private final String name; // final keyword indicates it is not possible to change the value of
                                // the field
+
     /** int value of locality. Mutable */
     private int locality;
 
@@ -259,7 +260,6 @@ public class Greeter {
     public String toString() {
         return String.format("{name:\"%s\", locality:\"%s\"}", name, getLocalityString());
     }
-
 
     /**
      * Returns a copy of the locality list.
