@@ -29,12 +29,10 @@ public class Greeting {
     private String name;
     /** Holds the format in which the greeting will be displayed. */
     private String formatStr;
-
     /** String value of the DEFAULT_GREETING with class scope. */
     private static final String DEFAULT_GREETING = "Hello";
     /** String value of the DEFAULT_FORMAT with class scope. */
     private static final String DEFAULT_FORMATSTR = "%s, %%s!";
-
 
     /**
      * Greeting that creates a greeting with ascii and unicode characters.
