@@ -139,7 +139,6 @@ public class Greeter {
      *
      * greeter.setLocality(2);
      * System.out.println(greeter.greet(true)); // Hello, Kailani!
-     * 
      * }
      * </pre>
      *

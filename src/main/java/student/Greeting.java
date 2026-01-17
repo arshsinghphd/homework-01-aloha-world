@@ -4,17 +4,19 @@ package student;
  * This class is a placeholder which you will fully implement based on the javadoc
  * https://cs5004-khoury-lionelle.github.io/hello_world/student/package-summary.html
  */
+
 /**
- * Greeting holds the locality of the greeting, the greeting itself, and the format in which 
+ * Greeting holds the locality of the greeting, the greeting itself, and the format in which
  * the greeting is to be printed.
  *
  * <p>
- * The greeting class is simple acts as a container for the information of location, 
- * the ascii and unicode strings of the greeting, along with formatted in which the greeting 
+ * The greeting class is simple acts as a container for the information of location,
+ * the ascii and unicode strings of the greeting, along with formatted in which the greeting
  * should be printed.
  * </p>
  *
  */
+
 public class Greeting {
     /** Holds the integer localityID. */
     private int localityID;
@@ -141,9 +143,9 @@ public class Greeting {
      */
     @Override
     public String toString() {
-        return String.format("{localityID:%d, " 
-            + "localityName:\"%s\", " 
-            + "asciiGreeting:\"%s\", " 
+        return String.format("{localityID:%d, "
+            + "localityName:\"%s\", "
+            + "asciiGreeting:\"%s\", "
             + "unicodeGreeting:\"%s\"}",
             this.getLocalityID(), this.getLocalityName(),
             this.getAsciiGreeting(), this.getUnicodeGreeting());
