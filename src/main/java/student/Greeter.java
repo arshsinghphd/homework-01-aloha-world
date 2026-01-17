@@ -24,7 +24,7 @@ public class Greeter {
     private int locality;
 
     /** List of locality options. */
-    private static List<String> localityList = List.of("Hawaii", "USA", "China", "Italy");
+    private static final List<String> localityList = List.of("Hawaii", "USA", "China", "Italy");
 
     /** int value of Hawaii greeting. */
     private static final int HAWAII = 1;
@@ -228,8 +228,7 @@ public class Greeter {
         if (this == obj) {
             return true;
         }
-        if (obj instanceof Greeter) {
-            Greeter other = (Greeter) obj;
+        if (obj instanceof Greeter other) {
             return name.equals(other.name) && locality == other.locality;
         }
         return false;
