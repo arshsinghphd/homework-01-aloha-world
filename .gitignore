@@ -1,3 +1,6 @@
+#Mac OS
+.DS*
+
 # Compiled class file
 *.class
 
