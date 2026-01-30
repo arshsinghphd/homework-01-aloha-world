@@ -1,7 +1,7 @@
 # Mac OS
-.DS_Store
-*/.DS_Store
-**/.DS_Store
+.DS_*
+*/.DS_*
+**/.DS_*
 
 # Compiled class file
 *.class
